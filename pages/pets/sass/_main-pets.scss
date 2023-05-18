@@ -1,0 +1,216 @@
+/* Main */
+
+.our--friends{
+    background: #F6F6F6;
+}
+
+.our--friends__inner{
+    max-width: 1200px;
+    padding: 80px 40px;
+    margin: 0 auto;
+    @media(max-width: 320px) {
+        padding: 42px 10px;
+    }
+}
+
+.our--friends__title{
+    max-width: 400px;
+    font-family: 'georgia-regular.ttf';
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    color: rgba(84, 84, 84, 1);
+    text-align: center;
+    margin: 0 auto 59px;
+    @media(max-width: 768px) {
+        margin: 0 auto 30px;
+    }
+    @media(max-width: 365px) {
+        max-width: 300px;
+        font-size: 24px;
+        line-height: 32.5px;
+    }
+    @media(max-width: 320px) {
+        letter-spacing: 0.08em;
+        margin: 0 auto 42px;
+    }
+}
+
+.cards--container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px 40px;
+    @media(max-width: 800px) {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    @media(max-width: 768px) {
+        max-width: 580px;
+    }
+    @media(max-width: 410px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.cards--items{
+    background: #FAFAFA;
+    border-radius: 9px;
+    padding-bottom: 30px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    &:hover > .cards--btn{
+        background: #FDDCC4;
+        border: 2px solid #FDDCC4;
+    }
+    &:hover{
+        background: #fff;
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    }
+    @media(max-width: 800px) {
+        max-width: 270px;
+    }
+    @media(max-width: 768px) {
+        &:nth-child(7n) {
+            display: none;
+        }
+        &:last-child{
+            display: none;
+        }
+    }
+    @media(max-width: 410px) {
+        &:nth-child(4n) {
+            display: none;
+        }
+        &:nth-child(5n) {
+            display: none;
+        }
+        &:nth-child(6n) {
+            display: none;
+        }
+    }
+}
+
+.cards--pics{
+    max-width: 270px;
+}
+
+.cards--text{
+    font-family: 'georgia-regular.ttf';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22.72px;
+    letter-spacing: 0.06em;
+    color: rgba(84, 84, 84, 1);
+    text-align: center;
+    margin: 30px 0 25px;
+    @media(max-width: 768px) {
+        margin: 26px 0 28px;
+    }
+}
+
+.cards--btn{
+    padding: 15px 45px;
+    font-family: 'georgia-regular.ttf';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.1px;
+    letter-spacing: 0.06em;
+    color: rgba(41, 41, 41, 1);
+    background: #FAFAFA;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    display: block;
+    margin: 0 auto;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    @media(max-width: 970px) {
+        padding: 12px 38px;
+        font-size: 13px;
+    }
+    @media(max-width: 850px) {
+        padding: 10px 35px;
+    }
+    @media(max-width: 768px) {
+        font-size: 17px;
+        padding: 15px 45px;
+
+    }
+    @media(max-width: 505px) {
+        font-size: 15px;
+        padding: 13px 40px;
+    }
+    @media(max-width: 460px) {
+        font-size: 12px;
+        padding: 10px 35px;
+    }
+    @media(max-width: 410px) {
+        font-size: 17px;
+        padding: 15px 45px;
+    }
+}
+
+.card--navigation{
+    max-width: 340px;
+    margin: 57px auto 0;
+    @media(max-width: 768px) {
+        margin: 35px auto 0;
+    }
+}
+
+.navigation--wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation--btn{
+    max-width: 52px;
+    padding: 11px 11px 13px 10px;
+    border: 2px solid #CDCDCD;
+    border-radius: 100px;
+    background: #F6F6F6;
+    font-family: 'georgia-regular.ttf';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: rgba(205, 205, 205, 1);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    &:last-child{
+        color: rgba(41, 41, 41, 1);
+        border: 2px solid #F1CDB3;
+    }
+    &:hover{
+        background: #FDDCC4;
+        border: 2px solid #FDDCC4;
+        color: rgba(41, 41, 41, 1);
+    }
+}
+
+.second--btn{
+    padding: 14px 19px;
+    display: flex;
+    justify-content: center;
+}
+
+.third--btn{
+    padding: 14px 21px;
+    display: flex;
+    justify-content: center;
+    background: #F1CDB3;
+    border-radius: 100px;
+    border: 2px solid #F1CDB3;
+    color: rgba(41, 41, 41, 1);
+}
+
+.fourth--btn{
+    padding: 14px 19px;
+    display: flex;
+    justify-content: center;
+    color: rgba(41, 41, 41, 1);
+    border: 2px solid #F1CDB3;
+}
+

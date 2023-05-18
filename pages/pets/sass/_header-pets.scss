@@ -1,0 +1,108 @@
+/* header */
+
+.header--inner{
+    max-width: 1200px;
+    padding: 30px 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media(max-width: 768px) {
+        padding: 30px 30px;
+    }
+    @media(max-width: 320px) {
+        padding: 30px 20px;
+    }
+}
+
+.header--logo{
+    font-family: 'georgia-regular.ttf';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35.2px;
+    letter-spacing: 0.06em;
+    color: rgba(84, 84, 84, 1);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.header--logo__text{
+    font-family: 'arial-regular.ttf';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14.95px;
+    letter-spacing: 0.1em;
+    color: rgba(41, 41, 41, 1);
+    @media(max-width: 320px) {
+        letter-spacing: 0.11em;
+    }
+}
+
+/* nav */
+
+.nav{
+    @media(max-width: 767px) {
+        display: none;
+    }
+}
+
+.nav--list{
+    display: flex;
+    .nav--items{
+        margin-right: 35px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    .nav--link{
+        text-decoration: none;
+        font-family: 'arial-regular.ttf';
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        color: rgba(84, 84, 84, 1);
+        transition: .2s ease-in-out;
+        &:hover{
+            color: rgba(41, 41, 41, 1);
+            border-bottom: 3px solid rgba(241, 205, 179, 1);
+        }
+    }
+}
+
+.our--pets{
+    border-bottom: 3px solid rgba(241, 205, 179, 1);
+}
+
+/* Burger */
+
+.burger{
+    display: none;
+    width: 30px;
+    height: 2px;
+    background: rgba(0, 0, 0, 1);
+    position: relative;
+    &::before{
+        content: '';
+        width: 30px;
+        height: 2px;
+        background: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 10px;
+        left: 0;
+        z-index: 3;
+    }
+    &::after{
+        content: '';
+        width: 30px;
+        height: 2px;
+        background: rgba(0, 0, 0, 1);
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        z-index: 3;
+    }
+    @media (max-width: 767px) {
+        display: block;
+    }
+}
